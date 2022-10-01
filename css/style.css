@@ -6,10 +6,37 @@
 a{
     text-decoration: none;
 }
+ul{
+    list-style: none;
+}
+/* Navbar */
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20PX;
+    color: whitesmoke;
+}
 
+.nav-links{
+    display: flex;
+    align-items: center;
+}
+.nav-links li{
+    margin: 0 30px;
+}
+
+.active{
+    color: #fc036b;
+    text-decoration: underline;
+    font-weight: bold;
+}
 header{
     width: 100vw;
-    height: 110vh;
+    height: 100vh;
     background-image: url(../image/3.jpg);
     background-position: bottom;
     background-size: cover;
@@ -18,8 +45,44 @@ header{
     justify-content: center;
 }
 
+
 .header-content{
    margin-bottom: 150px;
    color: whitesmoke;
    text-align: center;
+}
+
+.header-content h2{
+    font-size: 4vmin;
+}
+
+.line{
+    width: 150px;
+    height: 4px;
+    background: #fc036b;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.header-content h1{
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.ctn{
+    padding: 8px 15px;
+    background: #fc036b;
+    border-radius: 30px;
+    color: whitesmoke;
+}
+ @media  only screen and (max-width:850px){
+
+    .navbar{
+       padding: 40px;
+    }
+    .logo{
+
+    }
+    
 }
