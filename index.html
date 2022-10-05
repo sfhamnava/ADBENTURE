@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ADVENTURE</title>
-      <!---==== css ====-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+      <!--==== CSS ====-->
       <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -19,6 +20,9 @@
              <li><a href="#"></a>About</li>
              <li class="ctn"><a href="#"></a>Contact</li>
          </UL>
+        
+         <i class="fa fa-bars  menu-btn"></i>
+
     </nav>
 
 
@@ -30,5 +34,36 @@
            <a href="#" class="ctn">learn more</a>
        </div>
    </header> 
+     <!--==Ebents ==--> 
+
+     <section class="events">
+         <div class="title">
+         <h1>Upcoming Events</h1>
+         <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="image/4.jpg" alt="">
+                <h4>Everest camp trek</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quod perferendis sint explicabo vitae nobis?</p>
+                <a href="#" class="ctn">learn more</a>
+            </div>
+            <div class="col">
+                <img src="image/2.jpg" alt="">
+                <h4>Walking Holidays</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quod perferendis sint explicabo vitae nobis?</p>
+                <a href="#" class="ctn">learn more</a>
+            </div>
+        </div>
+     </section>
+
+
+   <script>
+       const menuBtn = document.querySelector('.menu-btn')
+       const navlinks = document.querySelector('.nav-links')
+       menuBtn.addEventListener('click',()=>{
+           navlinks.classList.toggle('mobile-menu')
+       })
+   </script>
 </body>
 </html>
